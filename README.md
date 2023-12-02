@@ -6,7 +6,7 @@
     <td>App Screens</td>
   </tr>
   <tr>
-    <td><img src="media/ic_stack.jpeg" width="300" height="200"></td>
+    <td><img src="media/ic_stack.jpeg" width="500"></td>
   </tr>
 </table>
 
