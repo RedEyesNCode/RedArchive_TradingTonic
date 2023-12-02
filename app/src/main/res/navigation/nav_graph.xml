@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeDashboardFragment">
+
+    <fragment
+        android:id="@+id/homeDashboardFragment"
+        android:name="com.tonictrader.tonictrades.home.HomeDashboardFragment"
+        android:label="fragment_home_dashboard"
+        tools:layout="@layout/fragment_home_dashboard" />
+    <fragment
+        android:id="@+id/historyFragment2"
+        android:name="com.tonictrader.tonictrades.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.tonictrader.tonictrades.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/charFragment"
+        android:name="com.tonictrader.tonictrades.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+</navigation>

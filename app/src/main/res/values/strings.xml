@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TradingTonicPlayStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="by_clicking_signup">By clicking on sign up button,  you will agree to our</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="trade_information">Trade Information</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="trades_of_nifty">Nifty</string>
+    <string name="options">Options</string>
+    <string name="futures">Futures</string>
+    <string name="bank_nifty_futures_and_options">BANK NIFTY FUTURES \u0026 OPTIONS</string>
+    <string name="bank_nifty">Bank Nifty</string>
+    <string name="eyelashes">Eyelashes</string>
+    <string name="welcome_back_n_log_in_to_your_account">Welcome back ! \n Log in to your account</string>
+    <string name="tonic">Tonic</string>
+    <string name="trades">Trades</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="terms_u0026_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="by_clicking_on_login_button_you_will_agree_to_our">By clicking on login button, you will agree to our</string>
+    <string name="by_clicking_on_sign_button_you_will_agree_to_our">By clicking on sign button, you will agree to our</string>
+    <string name="create_a_free_account">Create a free account.</string>
+    <string name="number">Number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="otp_has_been_sent_to_number_n">OTP has been sent to number \n</string>
+    <string name="resend_otp">Resend Otp</string>
+    <string name="current_accuracy">Current Accuracy</string>
+    <string name="are_you_sure_n_you_want_to_log_out">Are you sure \n you want to log out ?</string>
+    <string name="important_alert">Important Alert</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="getting_trades">GETTING TRADES</string>
+    <string name="hi_how_are_you_i_am_fine_thank_you">Hi, How are you? I am fine thank you.</string>
+    <string name="refresh_all_trade_suggestions">Refresh all Trade suggestions</string>
+    <string name="type_your_message_here">Type Your message here</string>
+</resources>

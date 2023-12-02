@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".history.HistoryFragment">
+
+    <LinearLayout
+        android:id="@+id/noHistoryLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/_95sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_history_mini"
+            android:layout_height="@dimen/_95sdp"
+            android:id="@+id/ivNoHistory">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="No History"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recvHistoryTrade"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:visibility="gone"
+        tools:listitem="@layout/history_list"
+        tools:itemCount="4"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

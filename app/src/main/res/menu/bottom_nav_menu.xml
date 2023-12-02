@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeDashboardFragment"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/historyFragment2"
+        android:enabled="true"
+        android:title="History"
+        android:icon="@drawable/history"/>
+    <item
+        android:id="@+id/charFragment"
+        android:enabled="true"
+        android:title="Chat"
+        android:icon="@drawable/news"/>
+    <item
+        android:id="@+id/settingsFragment2"
+        android:enabled="true"
+        android:title="Settings"
+        android:icon="@drawable/setting"/>
+
+</menu>

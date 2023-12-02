@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    style="@style/MyRounded.MaterialComponents.MaterialAlertDialog"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyRounded.MaterialComponents.MaterialAlertDialog"
+        android:orientation="vertical"
+        android:background="@drawable/card_background">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_12sdp"
+                android:text="Trade Information"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:src="@drawable/ic_close_white"
+                android:layout_centerVertical="true"
+                android:id="@+id/ivCloseLive"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="@dimen/_25sdp"/>
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/title"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:text="@string/bank_nifty_futures_and_options"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/layoutInfoMajor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/strikepriceOptions"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_8sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="Strike Price (O)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/btnStrikePriceoptions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:background="#40C4FF"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingHorizontal="@dimen/_5sdp"
+                                    android:paddingVertical="@dimen/_4sdp"
+                                    android:text="?"
+                                    android:textAllCaps="true"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14sdp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/targetLayoutoptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/strikepriceOptions"
+                            android:paddingVertical="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="Target (O)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/btnTargetOptions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:background="#AA00FF"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingHorizontal="@dimen/_5sdp"
+                                    android:paddingVertical="@dimen/_4sdp"
+                                    android:text="? "
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/stoplossLayoutOptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/_8sdp"
+                            android:layout_below="@id/targetLayoutoptions"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="Stop Loss (O)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/btnStopLossOptions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:background="@color/red"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingHorizontal="@dimen/_5sdp"
+                                    android:paddingVertical="@dimen/_4sdp"
+                                    android:text="?"
+                                    android:textAllCaps="true"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layoutInfoMajorFutures"
+                        android:layout_below="@id/layoutInfoMajor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/strikePriceLayoutFutures"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_8sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="Strike Price  (F)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/btnStrikePriceFutures"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:background="#40C4FF"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingHorizontal="@dimen/_5sdp"
+                                    android:paddingVertical="@dimen/_4sdp"
+                                    android:text="?"
+                                    android:textAllCaps="true"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14sdp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/targetLayoutFutures"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/_8sdp"
+                            android:layout_below="@id/strikePriceLayoutFutures"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="Target (F)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/btnTargetFutures"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:background="#AA00FF"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingHorizontal="@dimen/_5sdp"
+                                    android:paddingVertical="@dimen/_4sdp"
+                                    android:text="?"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/stoplossLayoutFutures"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/_8sdp"
+                            android:layout_below="@id/targetLayoutFutures"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="Stop Loss (F)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/btnStopLossFutures"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/red"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingHorizontal="@dimen/_5sdp"
+                                    android:paddingVertical="@dimen/_4sdp"
+                                    android:text="?"
+                                    android:textAllCaps="true"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tradeInformation"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutInfoMajorFutures"
+                        android:layout_marginVertical="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/background_yellow"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_5sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Trade Message here"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ivTradeImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:visibility="gone"
+                        android:layout_below="@id/tradeInformation"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/feed_image"
+                        app:riv_border_color="@color/black"
+                        app:riv_border_width="@dimen/_1sdp"
+                        app:riv_corner_radius="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tvTradeImage"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tradeInformation"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/trade_message_bf"
+                        android:fontFamily="@font/lato_bold"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Trade Image Information : "
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

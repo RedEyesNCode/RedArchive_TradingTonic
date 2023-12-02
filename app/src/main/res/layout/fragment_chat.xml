@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.tonictrader.tonictrades.chat.ChatViewmodel" />
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".chat.ChatFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/splashfinal" />
+
+    <include
+        android:id="@+id/commonTitleBar"
+        layout="@layout/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recvChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commonTitleBar"
+        android:layout_marginTop="@dimen/_12sdp"
+        tools:itemCount="12"
+        android:layout_above="@id/commentLayout"
+        tools:listitem="@layout/outgoing_message_layout" />
+    <LinearLayout
+        android:id="@+id/commentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/ivSendMedia"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:src="@drawable/ic_send_image" />
+
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toLeftOf="@id/btnSend"
+                android:layout_toRightOf="@id/ivSendMedia"
+                android:background="@null"
+                android:fontFamily="@font/lato_regular"
+                android:hint="@string/type_your_message_here"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_9sdp"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+
+                android:textColor="@color/black"
+                android:maxLines="4"
+                android:minLines="1"
+                android:textColorHint="@color/gray_black"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/btnSend"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:padding="@dimen/_8sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_send_message">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

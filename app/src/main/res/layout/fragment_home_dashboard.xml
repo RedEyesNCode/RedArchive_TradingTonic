@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/splashfinal"
+    android:orientation="vertical"
+    tools:context=".home.HomeDashboardFragment">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/cardsMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:alpha="0.92"
+            android:layout_height="wrap_content">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/topCards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:id="@+id/tradeNifty"
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:layout_height="@dimen/_170sdp"
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:paddingVertical="@dimen/_12sdp">
+
+                    <TextView
+                        android:id="@+id/textOptions"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="bottom|center_horizontal"
+
+                        android:fontFamily="@font/lato_bold"
+                        android:text="@string/trades_of_nifty"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_24sdp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardTwo"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                android:alpha="0.8"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_7sdp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:id="@+id/tradeBankNifty"
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:layout_height="@dimen/_170sdp"
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:paddingVertical="@dimen/_12sdp">
+
+                    <TextView
+                        android:id="@+id/textFutures"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="Bank Nifty"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_24sdp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recvRemoteTrades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topCards"
+            android:layout_marginTop="1dp"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="15"
+            tools:listitem="@layout/remote_trade_list" />
+    </RelativeLayout>
+
+        </TableLayout>
+
+
+    </ScrollView>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:text="@string/refresh_all_trade_suggestions"
+            android:backgroundTint="@color/green"
+            android:contentDescription="refresh list button"
+            android:src="@drawable/ic_refresh" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

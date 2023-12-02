@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/incomingTextMessageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/outgoing_chat_bubble"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_21sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/hi_how_are_you_i_am_fine_thank_you"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/chatMedia"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_225sdp"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/_12sdp"
+                android:scaleType="fitXY"
+                android:background="@drawable/incoming_chat_bubble"
+                android:src="@drawable/ic_signals"
+                android:visibility="gone"
+                app:riv_corner_radius="@dimen/_4sdp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
